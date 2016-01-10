@@ -72,14 +72,13 @@ public class Emp {
 		this.salary = salary;
 	}
 
-	public void setRents(List<Rent> rents) {
-		this.rents = rents;
-	}
-
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "emp")
 	@JsonIgnore
-	public List<Rent> getRent() {
+	public List<Rent> getRents() {
 		return rents;
 	}
 
+	public void setRents(List<Rent> rents) {
+		this.rents = rents;
+	}
 }

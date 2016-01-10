@@ -12,15 +12,15 @@ import java.util.List;
 @NamedQueries({
 		@NamedQuery(name = "car.getAll", query = "Select c from Car c"),
 		@NamedQuery(name = "car.getByID", query = "Select c from Car c where c.idCar = :idCar"),
-		@NamedQuery(name = "car.getAvailable", query = "Select c from Car c where c.Available = true") })
+		@NamedQuery(name = "car.isAvailable", query = "Select c from Car c where c.available = true") 
+		})
 public class Car {
 
 	private int idCar;
 	private String Brand;
-	private String Model;
-	private Boolean Available = false;
-	private int yop;
+	private String Model;	
 	private String Description;
+	private Boolean Available = false;
 
 	private List<Rent> rents = new ArrayList<Rent>();
 
@@ -58,14 +58,6 @@ public class Car {
 		Available = available;
 	}
 
-	public int getYop() {
-		return yop;
-	}
-
-	public void setYop(int yop) {
-		this.yop = yop;
-	}
-
 	public String getDescription() {
 		return Description;
 	}
@@ -79,8 +71,8 @@ public class Car {
 	public List<Rent> getRents() {
 		return rents;
 	}
-
-	public void setRent(List<Rent> rents) {
+	
+	public void setRents(List<Rent> rents) {
 		this.rents = rents;
 	}
 }
