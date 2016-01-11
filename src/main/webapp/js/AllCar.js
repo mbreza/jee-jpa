@@ -1,6 +1,7 @@
 $(document).ready(function()
 {
       $.get("/carrent/rest/car/getAllCars", function(data, textStatus)
+    		  
       {
               var table = document.getElementById('presentationTable');
 
@@ -21,6 +22,12 @@ $(document).ready(function()
                     cellModel.appendChild(cellModelText);
                     cellDescription.appendChild(cellDescriptionText);
                     
+                    
+                    
+                    row.appendChild(cellID);
+                    	row.appendChild(cellBrand);
+                    		row.appendChild(cellDescription);
+                    table.appendChild(row);
               }
       });
 });
