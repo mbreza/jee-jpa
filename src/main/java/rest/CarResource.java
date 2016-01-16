@@ -8,6 +8,7 @@ import javax.ejb.Stateless;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+
 import java.util.List;
 
 @Stateless
@@ -49,7 +50,7 @@ public class CarResource {
 
     @POST
     @Path("/updateCar")
-    public Response updateCar(@FormParam("idCar") int idCar,
+    public Response updateCar(@FormParam("idCar") Long idCar,
                                    @FormParam("Brand") String Brand,
                                    @FormParam("Model") String Model,
                                    @FormParam("Description") String Description)
@@ -68,7 +69,7 @@ public class CarResource {
 
     @POST
     @Path("/deleteCar")
-    public Response deleteCar(@FormParam("idCar") int idCar)
+    public Response deleteCar(@FormParam("idCar") Long idCar)
     {
         Car car = new Car();
         car.setIdCar(idCar);

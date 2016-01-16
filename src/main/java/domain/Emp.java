@@ -13,7 +13,7 @@ import java.util.List;
 		@NamedQuery(name = "emp.getByID", query = "Select e from Emp e where e.idEmp = :idEmp") })
 public class Emp {
 
-	private int idEmp;
+	private Long idEmp;
 	private String firstName;
 	private String lastName;
 	private String position;
@@ -24,11 +24,11 @@ public class Emp {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	public int getIdEmp() {
+	public Long  getIdEmp() {
 		return idEmp;
 	}
 
-	public void setIdEmp(int idEmp) {
+	public void setIdEmp(Long idEmp) {
 		this.idEmp = idEmp;
 	}
 

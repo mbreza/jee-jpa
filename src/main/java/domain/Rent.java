@@ -16,7 +16,7 @@ public class Rent {
 
 	
 	private Long idRent;
-    private Date doo;       //date of order
+    private Date dor; //Date of rent
     private double price;
 
 
@@ -34,11 +34,11 @@ public class Rent {
     }
 
     @Temporal(TemporalType.DATE)
-    public Date getDoo() {
-        return doo;
+    public Date getDor() {
+        return dor;
     }
-    public void setDoo(Date doo) {
-        this.doo = doo;
+    public void setDor(Date dor) {
+        this.dor = dor;
     }
 
     public double getPrice() {

@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Wypozyczalnia samochodow</title>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/AddRent.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+$(function() {
+$( "#dorPicker" ).datepicker();
+});
+</script>
+</head>
+
+<body>
+
+	<p class="bigheader">Samochody</p>
+
+	<div class="menubuttons">
+		<div class="menubutton">
+			<a href="index.jsp"><img src="graphic/home.png"
+				class="menubuttonhome"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllRent.jsp"><img src="graphic/rent.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllCar.jsp"><img src="graphic/car.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllEmp.jsp"><img src="graphic/emp.png"
+				class="menubutton"></a>
+		</div>
+	</div>
+
+
+	<form action="/carrent/rest/rent/addRent" method="post">
+		    <table class="operationtable">
+        <tr class='tableheader'>
+            <td colspan='2'>Dodawanie wypozyczenia</td>
+        </tr>
+        <tr>
+            <td>IDreff Samochod:</td>
+            <td>
+                <select name="carID" id="carID">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>IDreff Pracownik:</td>
+            <td>
+                <select name="empID" id="empID">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Cena:</td>
+            <td><input type="text" name="price" id="priceID" /></td>
+        </tr>
+        <tr>
+            <td>Data wypozyczenia:</td>
+            <td><input id="dorPicker" type="text" name="dor" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value=" DODAJ " align="right"></td>
+        </tr>
+    </table>
+		</div>
+</body>
+</html>

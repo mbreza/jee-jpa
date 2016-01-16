@@ -16,7 +16,7 @@ import java.util.List;
 		})
 public class Car {
 
-	private int idCar;
+	private Long idCar;
 	private String Brand;
 	private String Model;	
 	private String Description;
@@ -26,11 +26,11 @@ public class Car {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	public int getIdCar() {
+	public Long  getIdCar() {
 		return idCar;
 	}
 
-	public void setIdCar(int idCar) {
+	public void setIdCar(Long idCar) {
 		this.idCar = idCar;
 	}
 

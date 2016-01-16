@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Wypozyczalnia samochodow</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/AllRent.js"></script>
+</head>
+
+<body>
+
+	<p class="bigheader">Wypożyczenia</p>
+
+	<div class="menubuttons">
+		<div class="menubutton">
+			<a href="index.html"><img src="graphic/home.png"
+				class="menubuttonhome"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllRent.html"><img src="graphic/rent.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllCar.html"><img src="graphic/car.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllEmp.html"><img src="graphic/emp.png"
+				class="menubutton"></a>
+		</div>
+	</div>
+
+	<div class="contentbox">
+
+		<!--<a href="getCarData.jsp" class="buttonlink"><div class="addbutton">+</div></a>-->
+		<table class="operationtable">
+			<tr class="tableheader">
+				<td colspan="6">Operacje</td>
+			</tr>
+			<tr>
+				<form action="selectCar.jsp">
+					<td><input type="text" name="idpselect" value="Podaj ID" /></td>
+					<!--<td><a href="selectCar.jsp"><div class="opbutton"><img src="graphic/select.png"></div></a></td>-->
+					<td><input type="image" src="graphic/select.png" border="0"
+						alt="Submit" onclick="window.location.href='selectCar.jsp'" /></td>
+				</form>
+
+				<form action="updateCar.jsp">
+					<td><input type='text' name='idupdate' value="Podaj ID" /></td>
+					<!--<td><a href="getCarData.jsp"><div class="opbutton"><img src="graphic/update.png"></div></a></td>-->
+					<td><input type="image" src="graphic/update.png" border="0"
+						alt="Submit" /></td>
+				</form>
+
+				<form action="deletecar">
+					<td><input type='text' name='iddelete' value="Podaj ID" /></td>
+					<!--<td><a href="getCarData.jsp"><div class="opbutton"><img src="graphic/delete.png"></div></a></td>-->
+					<td><input type='image' src="graphic/delete.png" border="0"
+						alt="Submit" /></td>
+				</form>
+			</tr>
+
+			<tr>
+				<td colspan="6"><a href="getCarData.jsp"><div
+							class="opbutton">
+							<img src="graphic/plus.png">
+						</div></a></td>
+			</tr>
+		</table>
+
+
+
+    <table class="presentationTable" id="presentationTable" align="center">
+            <tr class="tableheader" id="tableheader">
+                <td>ID</td>
+                <td>ID Samochod</td>
+                <td>ID Pracownik</td>
+                <td>Cena</td>
+                <td>Data wypozyczenia</td>
+            </tr>
+
+
+        <div id="tablePlaceholder"></div>
+
+    </table>
+	</div>
+
+
+</body>
+</html>
