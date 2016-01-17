@@ -8,5 +8,7 @@ document.getElementById('id').innerHTML = data.idCar;
 document.getElementById('brand').value = data.brand;
 document.getElementById('model').value = data.model;
 document.getElementById('description').value = data.description;
+
 });
+
 });

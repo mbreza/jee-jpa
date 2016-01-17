@@ -11,4 +11,5 @@ document.getElementById('position').value = data.position;
 document.getElementById('pin').value = data.pin;
 document.getElementById('salary').value = data.salary;
 });
+
 });

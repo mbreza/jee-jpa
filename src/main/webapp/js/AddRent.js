@@ -22,4 +22,6 @@ list.innerHTML = data[i].idEmp;
 empSelect.appendChild(list);
 }
 });
+
+
 });

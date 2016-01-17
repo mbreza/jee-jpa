@@ -32,6 +32,7 @@ public class CarResource {
         carManager.addCar(car);
 
         return Response.status(Response.Status.CREATED).build();
+       
     }
 
     @GET
