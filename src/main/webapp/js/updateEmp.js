@@ -12,4 +12,10 @@ document.getElementById('pin').value = data.pin;
 document.getElementById('salary').value = data.salary;
 });
 
+
+$('#form1').ajaxForm(function() { 
+    alert("Job done!"); 
+	 window.location.href = 'http://localhost:8080/carrent/AllEmp.html';            
+}); 
+
 });

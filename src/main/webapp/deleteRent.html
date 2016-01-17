@@ -6,6 +6,8 @@
 <title>Wypozyczalnia samochodow</title>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+<script src="http://malsup.github.com/jquery.form.js"></script> 
 <script src="js/deleteRent.js"></script>
 </head>
 
@@ -34,20 +36,12 @@
 
 
 
-<form action="/carrent/rest/rent/deleteRent" method="post">
+<form id="form1" action="/carrent/rest/rent/deleteRent" method="post">
 <input type="text" id="idRent" name="idRent" style="visibility: hidden;"/>
 <table class="operationtable">
 <tr class='warningheader'>
-<td colspan='2'>Czy napewno chcesz usunac wybranego pracwonika?</td>
+<td colspan='2'>Czy napewno chcesz usunac wybrane wypozyczenie?</td>
 </tr>
-
- </tr>
-<tr>
-<td>ID:</td>
-<td id="id"></td>
-</tr>
-<tr>
-
 <tr>
 <td colspan="2"><input type="submit" value=" USUŃ " align="right"></td>
 </tr>

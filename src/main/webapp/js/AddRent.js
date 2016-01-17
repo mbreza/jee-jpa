@@ -23,5 +23,9 @@ empSelect.appendChild(list);
 }
 });
 
+$('#form1').ajaxForm(function() { 
+    alert("Job done!");
+    window.location.href = 'http://localhost:8080/carrent/AllRent.html'; 
+}); 
 
 });

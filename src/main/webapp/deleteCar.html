@@ -6,6 +6,8 @@
 <title>Wypozyczalnia samochodow</title>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+<script src="http://malsup.github.com/jquery.form.js"></script> 
 <script src="js/DeleteCar.js"></script>
 </head>
 
@@ -34,7 +36,7 @@
 
 
 
-<form action="/carrent/rest/car/deleteCar" method="post">
+<form id="form1" action="/carrent/rest/car/deleteCar" method="post">
 <input type="text" id="idCar" name="idCar" style="visibility: hidden;"/>
 <table class="operationtable">
 <tr class='warningheader'>

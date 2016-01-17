@@ -34,4 +34,12 @@ document.getElementById('dorPicker').value = data.dor;
 document.getElementById('carID').value = data.car.idCar;
 document.getElementById('empID').value = data.emp.idEmp;
 });
+
+
+$('#form1').ajaxForm(function() { 
+    alert("Job done!"); 
+	 window.location.href = 'http://localhost:8080/carrent/AllRent.html';            
+}); 
+
+
 });

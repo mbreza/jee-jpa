@@ -11,4 +11,10 @@ document.getElementById('description').value = data.description;
 
 });
 
+
+$('#form1').ajaxForm(function() { 
+    alert("Job done!"); 
+	 window.location.href = 'http://localhost:8080/carrent/AllCar.html';            
+}); 
+
 });
