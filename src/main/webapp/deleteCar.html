@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Wypozyczalnia samochodow</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/DeleteCar.js"></script>
+</head>
+
+<body>
+
+	<p class="bigheader">Samochody</p>
+
+	<div class="menubuttons">
+		<div class="menubutton">
+			<a href="index.html"><img src="graphic/home.png"
+				class="menubuttonhome"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllRent.html"><img src="graphic/rent.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllCar.html"><img src="graphic/car.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllEmp.html"><img src="graphic/emp.png"
+				class="menubutton"></a>
+		</div>
+	</div>
+
+
+
+<form action="/carrent/rest/car/deleteCar" method="post">
+<input type="text" id="idCar" name="idCar" style="visibility: hidden;"/>
+<table class="operationtable">
+<tr class='warningheader'>
+<td colspan='2'>Czy napewno chcesz usunac wybrany samochod?</td>
+</tr>
+<tr>
+<td colspan="2"><input type="submit" value=" USUŃ " align="right"></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>
