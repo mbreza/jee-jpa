@@ -17,10 +17,10 @@ import java.util.List;
 public class Car {
 
 	private Long idCar;
-	private String Brand;
-	private String Model;	
-	private String Description;
-	private Boolean Available = false;
+	private String brand;
+	private String model;	
+	private String description;
+	private Boolean available = false;
 
 	private List<Rent> rents = new ArrayList<Rent>();
 
@@ -35,35 +35,35 @@ public class Car {
 	}
 
 	public String getBrand() {
-		return Brand;
+		return brand;
 	}
 
 	public void setBrand(String brand) {
-		Brand = brand;
+		this.brand = brand;
 	}
 
 	public String getModel() {
-		return Model;
+		return model;
 	}
 
 	public void setModel(String model) {
-		Model = model;
+		this.model = model;
 	}
 
 	public Boolean getAvailable() {
-		return Available;
+		return available;
 	}
 
 	public void setAvailable(Boolean available) {
-		Available = available;
+		this.available = available;
 	}
 
 	public String getDescription() {
-		return Description;
+		return description;
 	}
 
 	public void setDescription(String description) {
-		Description = description;
+		this.description = description;
 	}
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "car")

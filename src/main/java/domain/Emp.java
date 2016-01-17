@@ -17,7 +17,7 @@ public class Emp {
 	private String firstName;
 	private String lastName;
 	private String position;
-	private int PIN;
+	private int pin;
 	private int salary;
 
 	private List<Rent> rents = new ArrayList<Rent>();
@@ -56,12 +56,12 @@ public class Emp {
 		this.position = position;
 	}
 
-	public int getPIN() {
-		return PIN;
+	public int getPin() {
+		return pin;
 	}
 
-	public void setPIN(int pIN) {
-		PIN = pIN;
+	public void setPin(int pin) {
+		this.pin = pin;
 	}
 
 	public int getSalary() {

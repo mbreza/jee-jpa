@@ -52,12 +52,12 @@ public class RentResource {
 
 	@POST
 	@Path("/updateRent")
-	public Response updateRent(@FormParam("idRent") long idRent,
-			@FormParam("car") String car,
-			@FormParam("emp") String emp,
-			@FormParam("price") double price, @FormParam("dor") Date dor) {
-		Long carID = Long.parseLong(car.substring(0,car.indexOf('.')));
-		Long empID = Long.parseLong(emp.substring(0,emp.indexOf('.')));
+	public Response updateRent(
+			@FormParam("idRent") long idRent,
+			@FormParam("car") Long carID,
+			@FormParam("emp") Long empID,
+			@FormParam("price") double price, 
+			@FormParam("dor") Date dor) {
 		Rent rent = rentManager.getRentByID(idRent);
 		rent.setCar(carManager.getCarByID(carID));
 		rent.setEmp(empManager.getEmpByID(empID));

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Wypozyczalnia samochodow</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/selectRent.js"></script>
+</head>
+
+<body>
+
+	<p class="bigheader">Samochody</p>
+
+	<div class="menubuttons">
+		<div class="menubutton">
+			<a href="index.html"><img src="graphic/home.png"
+				class="menubuttonhome"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllRent.html"><img src="graphic/rent.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllCar.html"><img src="graphic/car.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllEmp.html"><img src="graphic/emp.png"
+				class="menubutton"></a>
+		</div>
+	</div>
+
+
+
+	<form action="/carrent/AllRent.html" method="post">
+		<table class="operationtable">
+			<tr class='tableheader'>
+				<td colspan='2'>Wypozyczenie:</td>
+			</tr>
+			<tr>
+				<td>ID:</td>
+				<td id="id"></td>
+			</tr>
+			<tr>
+				<td>id samochod:</td>
+				<td id="car"></td>
+			</tr>
+			<tr>
+				<td>ID pracownik:</td>
+				<td id="emp"></td>
+			</tr>
+			<tr>
+				<td>Cena:</td>
+				<td id="price"></td>
+			</tr>
+			<tr>
+				<td>Data:</td>
+				<td id="dor"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value=" POWRÓT "
+					align="right"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

@@ -20,14 +20,14 @@ public class CarResource {
 
     @POST
     @Path("/addCar")
-    public Response addCar(@FormParam("Brand") String Brand,
-                                @FormParam("Model") String Model,
-                                @FormParam("Description") String Description)
+    public Response addCar(@FormParam("brand") String brand,
+                                @FormParam("model") String model,
+                                @FormParam("description") String description)
     {
         Car car = new Car();
-        car.setBrand(Brand);
-        car.setModel(Model);
-        car.setDescription(Description);
+        car.setBrand(brand);
+        car.setModel(model);
+        car.setDescription(description);
 
         carManager.addCar(car);
 
@@ -51,15 +51,15 @@ public class CarResource {
     @POST
     @Path("/updateCar")
     public Response updateCar(@FormParam("idCar") Long idCar,
-                                   @FormParam("Brand") String Brand,
-                                   @FormParam("Model") String Model,
-                                   @FormParam("Description") String Description)
+                                   @FormParam("brand") String brand,
+                                   @FormParam("model") String model,
+                                   @FormParam("description") String description)
     {
         Car car = new Car();
         car.setIdCar(idCar);
-        car.setBrand(Brand);
-        car.setModel( Model);
-        car.setDescription(Description);
+        car.setBrand(brand);
+        car.setModel(model);
+        car.setDescription(description);
         car.setAvailable(Boolean.FALSE);
 
         carManager.updateCar(car);

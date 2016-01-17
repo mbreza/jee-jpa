@@ -23,7 +23,7 @@ public class EmpResource {
     public Response addCar(@FormParam("firstName") String firstName,
                                 @FormParam("lastName") String lastName,
                                 @FormParam("position") String position,
-                                @FormParam("PIN") int PIN,
+                                @FormParam("pin") int pin,
                                 @FormParam("salary") int salary
     		)
     {
@@ -31,7 +31,7 @@ public class EmpResource {
         emp.setFirstName(firstName);
         emp.setLastName(lastName);
         emp.setPosition(position);
-        emp.setPIN(PIN);
+        emp.setPin(pin);
         emp.setSalary(salary);
 
         empManager.addEmp(emp);
@@ -59,7 +59,7 @@ public class EmpResource {
                                    @FormParam("firstName") String firstName,
                                    @FormParam("lastName") String lastName,
                                    @FormParam("position") String position,
-                                   @FormParam("PIN") int PIN,
+                                   @FormParam("pin") int pin,
                                    @FormParam("salary") int salary)
     {
         Emp emp = new Emp();
@@ -67,7 +67,7 @@ public class EmpResource {
         emp.setFirstName(firstName);
         emp.setLastName( lastName);
         emp.setPosition(position);
-        emp.setPIN(PIN);
+        emp.setPin(pin);
         emp.setSalary(salary);
 
         empManager.updateEmp(emp);

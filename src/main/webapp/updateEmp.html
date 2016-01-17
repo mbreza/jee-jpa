@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Wypozyczalnia samochodow</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/updateEmp.js"></script>
+</head>
+
+<body>
+
+	<p class="bigheader">Pracownicy</p>
+
+	<div class="menubuttons">
+		<div class="menubutton">
+			<a href="index.html"><img src="graphic/home.png"
+				class="menubuttonhome"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllRent.html"><img src="graphic/rent.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllCar.html"><img src="graphic/car.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllEmp.html"><img src="graphic/emp.png"
+				class="menubutton"></a>
+		</div>
+	</div>
+
+
+
+<form action="/carrent/rest/emp/updateEmp" method="post">
+<input type="text" id="idEmp" name="idEmp" style="visibility: hidden;"/>
+<table class="operationtable">
+<tr class='tableheader'>
+<td colspan='2'>Edycja pracownik</td>
+</tr>
+<tr>
+<td>ID:</td>
+<td id="id"></td>
+</tr>
+<tr>
+<td>arka:</td>
+<td><input type="text" id="firstName" name="firstName" /></td>
+</tr>
+<tr>
+<td>Model:</td>
+<td><input type="text" id="lastName" name="lastName" /></td>
+</tr>
+<tr>
+<td>Opis:</td>
+<td><input type="text" id="position" name="position" /></td>
+</tr>
+<tr>
+<td>Opis:</td>
+<td><input type="text" id="pin" name="pin" /></td>
+</tr>
+<tr>
+<td>Opis:</td>
+<td><input type="text" id="salary" name="salary" /></td>
+</tr>
+<tr>
+<td colspan="2"><input type="submit" value=" ZAPISZ" align="right"></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>

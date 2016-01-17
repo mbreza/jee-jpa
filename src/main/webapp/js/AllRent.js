@@ -23,11 +23,41 @@ cellDor.appendChild(cellDorText);
 
 
 
+var cellDelete = document.createElement("td");
+var cellDeleteLink = document.createElement("a");
+var cellDeletePicture = document.createElement("img");
+cellDeletePicture.setAttribute('src', 'graphic/delete.png');
+cellDeleteLink.appendChild(cellDeletePicture);
+cellDeleteLink.href = "/carrent/deleteRent.html?id=" + data[i].idRent;
+cellDelete.appendChild(cellDeleteLink);
+
+
+var cellUpdate = document.createElement("td");
+var cellUpdateLink = document.createElement("a");
+var cellUpdatePicture = document.createElement("img");
+cellUpdatePicture.setAttribute('src', 'graphic/update.png');
+cellUpdateLink.appendChild(cellUpdatePicture);
+cellUpdateLink.href = "/carrent/updateRent.html?id=" + data[i].idRent;
+cellUpdate.appendChild(cellUpdateLink);
+
+
+var cellSelect = document.createElement("td");
+var cellSelectLink = document.createElement("a");
+var cellSelectPicture = document.createElement("img");
+cellSelectPicture.setAttribute('src', 'graphic/select.png');
+cellSelectLink.appendChild(cellSelectPicture);
+cellSelectLink.href = "/carrent/selectRent.html?id=" + data[i].idRent;
+cellSelect.appendChild(cellSelectLink);
+
+
 row.appendChild(cellID);
 row.appendChild(cellCarID);
 row.appendChild(cellEmpID);
 row.appendChild(cellPrice);
 row.appendChild(cellDor);
+row.appendChild(cellDelete);
+row.appendChild(cellUpdate);
+row.appendChild(cellSelect);
 table.appendChild(row);
 }
 });

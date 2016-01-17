@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Wypozyczalnia samochodow</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/selectEmp.js"></script>
+</head>
+
+<body>
+
+	<p class="bigheader">Samochody</p>
+
+	<div class="menubuttons">
+		<div class="menubutton">
+			<a href="index.html"><img src="graphic/home.png"
+				class="menubuttonhome"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllRent.html"><img src="graphic/rent.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllCar.html"><img src="graphic/car.png"
+				class="menubutton"></a>
+		</div>
+		<div class="menubutton">
+			<a href="AllEmp.html"><img src="graphic/emp.png"
+				class="menubutton"></a>
+		</div>
+	</div>
+
+
+
+	<form action="/carrent/AllEmp.html" method="post">
+		<table class="operationtable">
+			<tr class='tableheader'>
+				<td colspan='2'>Pracownik:</td>
+			</tr>
+			<tr>
+				<td>ID:</td>
+				<td id="id"></td>
+			</tr>
+			<tr>
+				<td>Marka:</td>
+				<td id="firstName"></td>
+			</tr>
+			<tr>
+				<td>Model:</td>
+				<td id="lastName"></td>
+			</tr>
+			<tr>
+				<td>Opis:</td>
+				<td id="position"></td>
+			</tr>
+			<tr>
+				<td>Opis:</td>
+				<td id="pin"></td>
+			</tr>
+			<tr>
+				<td>Opis:</td>
+				<td id="salary"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value=" POWRÓT "
+					align="right"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
